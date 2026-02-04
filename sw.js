@@ -1,1 +1,9 @@
-if(!self.define){let e,i={};const s=(s,n)=>(s=new URL(s+".js",n).href,i[s]||new Promise(i=>{if("document"in self){const e=document.createElement("script");e.src=s,e.onload=i,document.head.appendChild(e)}else e=s,importScripts(s),i()}).then(()=>{let e=i[s];if(!e)throw new Error(`Module ${s} didn’t register its module`);return e}));self.define=(n,r)=>{const t=e||("document"in self?document.currentScript.src:"")||location.href;if(i[t])return;let o={};const l=e=>s(e,t),d={module:{uri:t},exports:o,require:l};i[t]=Promise.all(n.map(e=>d[e]||l(e))).then(e=>(r(...e),o))}}define(["./workbox-8c29f6e4"],function(e){"use strict";self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"registerSW.js",revision:"2e555231d72541939a8352f8c3016815"},{url:"offline.html",revision:"df4582163e592e244edbd27f89cf6441"},{url:"index.html",revision:"f663612db727beb0daa78aa4b7d40d29"},{url:"404.html",revision:"69ba3120d06b00d21b7a31a19aa0b1b1"},{url:"assets/index-DbgDFSdl.js",revision:null},{url:"assets/index-0N8X_cIM.css",revision:null},{url:"manifest.webmanifest",revision:"3dccc544503b2a7863238f893a1b6d72"}],{}),e.cleanupOutdatedCaches(),e.registerRoute(new e.NavigationRoute(e.createHandlerBoundToURL("index.html")))});
+self.addEventListener('install', () => {
+  self.skipWaiting()
+})
+
+self.addEventListener('activate', () => {
+  self.clients.claim()
+})
+
+self.addEventListener('fetch', () => {})
