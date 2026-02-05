@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://afsanajennifer29-star.github.io/section--e-webapp/sitemap.xml
