@@ -4,21 +4,14 @@ export default function App() {
             minHeight: '100vh',
             backgroundColor: '#0f172a',
             color: '#e5e7eb',
-            padding: '24px',
-            fontFamily: 'system-ui, -apple-system, BlinkMacSystemFont, sans-serif',
-        }, children: [_jsx("h1", { style: { fontSize: '2rem', marginBottom: '16px' }, children: "Section E" }), _jsx(Section, { title: "Dramas", items: ['K-Drama', 'C-Drama', 'J-Drama'] }), _jsx(Section, { title: "Movies", items: ['Action', 'Romance', 'Thriller'] }), _jsx(Section, { title: "Studies", items: ['Notes', 'Exams', 'Resources'] }), _jsx("h2", { style: { marginTop: '32px' }, children: "Featured Drama Episode" }), _jsx("div", { style: {
-                    marginTop: '12px',
-                    position: 'relative',
-                    paddingTop: '56.25%', // 16:9
-                }, children: _jsx("iframe", { src: "https://www.youtube.com/embed/U6dQei2YD6M", title: "Ang Mutya Ng Section E Episode 1", style: {
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '100%',
-                        height: '100%',
-                        border: 'none',
-                    }, allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture", allowFullScreen: true }) })] }));
-}
-function Section({ title, items, }) {
-    return (_jsxs("div", { style: { marginBottom: '16px' }, children: [_jsx("h2", { children: title }), _jsx("ul", { children: items.map((item) => (_jsx("li", { children: item }, item))) })] }));
+            padding: '20px',
+            fontFamily: 'system-ui, sans-serif',
+        }, children: [_jsx("h1", { style: { fontSize: '2rem', marginBottom: '16px' }, children: "Section E \u2013 Drama Streaming" }), _jsx("p", { style: { marginBottom: '16px', color: '#cbd5f5' }, children: "Ang Mutya Ng Section E \u2013 Episode 01" }), _jsx("div", { style: {
+                    width: '100%',
+                    maxWidth: '900px',
+                    margin: '0 auto',
+                    borderRadius: '12px',
+                    overflow: 'hidden',
+                    boxShadow: '0 0 30px rgba(0,0,0,0.6)',
+                }, children: _jsx("iframe", { src: "https://archive.org/embed/ang-mutya-ng-section-e-2025-ep-01-sub-eng-720p-water", width: "100%", height: "500", frameBorder: "0", allowFullScreen: true }) })] }));
 }
